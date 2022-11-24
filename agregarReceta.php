@@ -3,7 +3,7 @@
 require 'db.php';
 $complex = $database->select ("tb_recipe_complex","*");
 $category = $database->select ("tb_recipe_category","*");
-$occasion = $database->select ("tb_recipe_occasion","*");
+$occasions = $database->select ("tb_recipe_occasions","*");
 
 ?>
 
@@ -79,7 +79,7 @@ $occasion = $database->select ("tb_recipe_occasion","*");
 </section>
 
 
-<form>
+<form action="response.php" method="post" enctype="multipart/form-data">
 <section class="container mt-5">
 
     <div class="row">
@@ -88,15 +88,15 @@ $occasion = $database->select ("tb_recipe_occasion","*");
         <input class="form-control" type="file" id="formFile">
       </div>
       <div class="col">
-        <label for="validationCustom01" class="form-label imp-recipe">Nombre de la Receta</label>
-        <input type="text" class="form-control" id="validationCustom01" required>
+        <label for="nombre-receta" class="form-label imp-recipe">Nombre de la Receta</label>
+        <input type="text" class="form-control" id="nombre-receta" required>
       </div>
     </div>
     
     <div class="row">
       <div class="col">
-        <label for="validationTextarea01" class="form-label imp-recipe" >Descripcion</label>
-      <textarea class="form-control" id="validationTextarea01"></textarea>
+        <label for="descripcion" class="form-label imp-recipe" >Descripcion</label>
+      <textarea class="form-control" id="descripcion"></textarea>
       </div>
       <div class="col">
         <label for="validationTextarea02" class="form-label imp-recipe" >Ingredientes</label>
@@ -107,8 +107,8 @@ $occasion = $database->select ("tb_recipe_occasion","*");
 
     <div class="row">
       <div class="col">
-        <label for="validationCustom02" class="form-label imp-recipe" >Tiempo de preparacion</label>
-      <input type="time" class="form-control" id="validationCustom02" required>
+        <label for="tiempo-preparacion" class="form-label imp-recipe" >Tiempo de preparacion</label>
+      <input type="text" class="form-control" id="tiempo-preparacion" required>
       </div>
       <div class="col">
         <label for="validationTextarea03" class="form-label imp-recipe">Instrucciones</label>
@@ -119,26 +119,30 @@ $occasion = $database->select ("tb_recipe_occasion","*");
 
     <div class="row">
       <div class="col">
-        <label for="validationCustom03" class="form-label imp-recipe" >Tiempo de Cocción</label>
-      <input type="time" class="form-control" id="validationCustom03" required>
+        <label for="tiempo-coccion" class="form-label imp-recipe" >Tiempo de Cocción</label>
+      <input type="text" class="form-control" id="tiempo-coccion" required>
       </div>
       <div class="col">
-        <label for="validationCustom04" class="form-label imp-recipe">Categorias</label>
-        <select class="form-select" id="validationCustom04" required>
-          <option selected disabled value="">Elegir...</option>
-          <option>Desayuno</option>
-          <option>Bebidas</option>
-          <option>Entrada</option>
-          <option>Almuerzo</option>
-          <option>Postres</option>
-          <option>Sopas</option>
+        <label for="categoria" class="form-label imp-recipe">Categorias</label>
+        <select name="categoria" class="form-select" id="categoria" required>
+          
+        <?php 
+
+         $len = count($category);  
+         for($i=0; $i < $len; $i++) {       
+            echo '<option value="'.$category[$i]       
+            ['id_recipe_category'].'">'.$category[$i]
+            ['recipe_category'].'</option>';
+         }
+         ?>
+
         </select>
   
        </div>
      
         <div class="col">
-          <label for="validationCustom09" class="form-label imp-recipe " >Porciones</label>
-          <input type="number" class="form-control" id="validationCustom09" required>
+          <label for="porciones" class="form-label imp-recipe">Porciones</label>
+          <input type="text" class="form-control" id="porciones" required>
         </div>
         
     </div>
@@ -146,26 +150,36 @@ $occasion = $database->select ("tb_recipe_occasion","*");
 
     <div class="row">
       <div class="col">
-        <label for="validationCustom05" class="form-label imp-recipe">Ocasiones</label>
-        <select class="form-select" id="validationCustom05" required>
-        <option selected disabled value="">Elegir...</option>
-        <option>Cumpleaños</option>
-        <option>Dia del Padre</option>
-        <option>Dia de la Madre</option>
-        <option>Dia del Niño</option>
-        <option>Navidad</option>
-        <option>Semana Santa</option>
-        <option>Verano</option>
+        <label for="ocasiones" class="form-label imp-recipe">Ocasiones</label>
+        <select name="ocasiones" class="form-select" id="ocasiones" required>
+
+        <?php 
+
+         $len = count($occasions);  
+         for($i=0; $i < $len; $i++) {       
+            echo '<option value="'.$occasions[$i]       
+            ['id_recipe_occasions'].'">'.$occasions[$i]
+            ['recipe_occasions'].'</option>';
+         }
+         ?>
+
       </select>
       </div>
       <div class="col">
-        <label for="validationCustom06" class="form-label imp-recipe">Dificultad</label>
-       <select class="form-select" id="validationCustom06" required>
-        <option selected disabled value="">Elegir...</option>
-        <option>Facil</option>
-        <option>Intermedio</option>
-        <option>Dificil</option>
-        
+        <label for="dificultad" class="form-label imp-recipe">Dificultad</label>
+       <select name="dificultad" class="form-select" id="dificultad" required>
+
+       <?php 
+
+         $len = count($complex);  
+         for($i=0; $i < $len; $i++) {       
+            echo '<option value="'.$complex[$i]       
+            ['id_recipe_complex'].'">'.$complex[$i]
+            ['recipe_complex'].'</option>';
+         }
+         ?>
+
+
        </select>
       </div>
 
@@ -179,16 +193,16 @@ $occasion = $database->select ("tb_recipe_occasion","*");
 
     <div class="row">
       <div class="col">
-        <label for="validationCustom07" class="form-label imp-recipe"  >Tiempo Total</label>
-        <input type="time" class="form-control" id="validationCustom07" required>
+        <label for="tiempo-total" class="form-label imp-recipe"  >Tiempo Total</label>
+        <input type="text" class="form-control" id="tiempo-total" required>
 
       </div>
       <div class="col">
-        <label for="validationCustom08" class="form-label  imp-recipe" >Receta Destacada?</label>
-        <select class="form-select" id="validationCustom08" required>
+        <label for="is_featured" class="form-label  imp-recipe" >Receta Destacada?</label>
+        <select name="is_featured" class="form-select" id="is_featured" required>
           <option selected disabled value="">Elegir...</option>
-          <option>SI</option>
-          <option>NO</option>
+          <option value="1">SI</option>
+          <option value="0">NO</option>
      
         </select>
       </div>
@@ -196,7 +210,10 @@ $occasion = $database->select ("tb_recipe_occasion","*");
 
      
     <div class="col-12m m-5">
-      <button class="btn btn-primary" >Agregar Receta</button>
+      <input type="submit" value="Agregar receta">
+      
+     
+
     </div>
    
  </section>

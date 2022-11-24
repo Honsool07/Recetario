@@ -1,3 +1,37 @@
+<?php
+    require 'db.php';
+
+    //session_start();
+    //if(isset($_SESSION["isLoggedIn"])){
+
+      
+    $data= $database->select("tb_recipes",[//inner
+        "[>]tb_recipe_category"=>["id_recipe_category" => "id_recipe_category"]//[>]join
+    ],[
+        "tb_recipes.id_recipe",
+        "tb_recipes.recipe_name",
+        "tb_recipes.recipe_prep_time",
+        "tb_recipes.recipe_cook_time",
+        "tb_recipes.recipe_total_time",
+        "tb_recipes.recipe_portions",
+        "tb_recipes.recipe_description",
+
+        "tb_recipes.recipe_image",
+        "tb_recipes.recipe_likes",
+        "tb_recipe_category.recipe_category",
+        "tb_recipe_category.recipe_complex",
+        "tb_recipe_category.recipe_occasions"
+    ]);
+
+   // }else{
+    //    header("Location: login.php");
+    //}
+
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

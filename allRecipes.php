@@ -170,7 +170,7 @@ https://flickity.metafizzy.co/
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
                               <h6><a class="card-title" href="recipeDetails.html"> Seven Drinks</a></h6>
-                                <a href="#" class="btn btn-card">Votar</a>
+                                <a href="likes.php?id_recipe=1" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
                         </div>
