@@ -6,7 +6,9 @@
 
       
     $data= $database->select("tb_recipes",[//inner
-        "[>]tb_recipe_category"=>["id_recipe_category" => "id_recipe_category"]//[>]join
+        "[>]tb_recipe_category"=>["id_recipe_category" => "id_recipe_category"],
+        "[>]tb_recipe_complex"=>["id_recipe_complex" => "id_recipe_complex"],
+        "[>]tb_recipe_occasions"=>["id_recipe_occasions" => "id_recipe_occasions"]
     ],[
         "tb_recipes.id_recipe",
         "tb_recipes.recipe_name",
@@ -15,6 +17,8 @@
         "tb_recipes.recipe_total_time",
         "tb_recipes.recipe_portions",
         "tb_recipes.recipe_description",
+        "tb_recipes.recipe_ingredients",
+        "tb_recipes.recipe_steps",
 
         "tb_recipes.recipe_image",
         "tb_recipes.recipe_likes",
@@ -139,7 +143,7 @@
                             echo "<td>".$data[$i]["recipe_portions"]."</td>";
                             echo "<td>".$data[$i]["is_featured"]."</td>";
                             echo "<td>".$data[$i]["recipe_complex"]."</td>";
-                            echo "<td>".$data[$i]["recipe_occasion"]."</td>";
+                            echo "<td>".$data[$i]["recipe_occasions"]."</td>";
                             echo "<td>".$data[$i]["recipe_description"]."</td>";
                             echo "<td>".$data[$i]["recipe_ingredients"]."</td>";
                             echo "<td>".$data[$i]["recipe_steps"]."</td>";
