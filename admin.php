@@ -105,82 +105,56 @@
 </section>
 <section class="container mt-5">
 
-  
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Imagen</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Categoria</th>
-        <th scope="col">Ocasión</th>
-        <th scope="col">Dificultad</th>
-        <th scope="col">Opciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td><img src="./imgs/menu-6.jpg" class="img-thumbnail" height="80" width="80" alt="thumbnail"></td>
-        <td>Pan Casero</td>
-        <td>Postres</td>
-        <td>Navidad</td>
-        <td>Facil</td>
-        <td><a href="#" class="link-primary">Edit</a>
-          <a href="#" class="link-danger">Delete</a></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td><img src="./imgs/menu-6.jpg" class="img-thumbnail" height="80" width="80" alt="thumbnail"></td>
-        <td>Pan Casero</td>
-        <td>Postres</td>
-        <td>Navidad</td>
-        <td>Facil</td>
-        <td><a href="#" class="link-primary">Edit</a>
-          <a href="#" class="link-danger">Delete</a></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td><img src="./imgs/menu-6.jpg" class="img-thumbnail" height="80" width="80" alt="thumbnail"></td>
-        <td>Pan Casero</td>
-        <td>Postres</td>
-        <td>Navidad</td>
-        <td>Facil</td>
-        <td><a href="#" class="link-primary">Edit</a>
-          <a href="#" class="link-danger">Delete</a></td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td><img src="./imgs/menu-6.jpg" class="img-thumbnail" height="80" width="80" alt="thumbnail"></td>
-        <td>Pan Casero</td>
-        <td>Postres</td>
-        <td>Navidad</td>
-        <td>Facil</td>
-        <td><a href="#" class="link-primary">Edit</a>
-          <a href="#" class="link-danger">Delete</a></td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td><img src="./imgs/menu-6.jpg" class="img-thumbnail" height="80" width="80" alt="thumbnail"></td>
-        <td>Pan Casero</td>
-        <td>Postres</td>
-        <td>Navidad</td>
-        <td>Facil</td>
-        <td><a href="#" class="link-primary">Edit</a>
-          <a href="#" class="link-danger">Delete</a></td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td><img src="./imgs/menu-6.jpg" class="img-thumbnail" height="80" width="80" alt="thumbnail"></td>
-        <td>Pan Casero</td>
-        <td>Postres</td>
-        <td>Navidad</td>
-        <td>Facil</td>
-        <td><a href="#" class="link-primary">Edit</a>
-          <a href="#" class="link-danger">Delete</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+  <table class="table table-bordered border-pink table-hover title-regular text-center">
+                <!--<thead class="title-regular text-white text-center">-->
+               <tr class="badge-pink"> <!-- tr=fila th=cabecera th=atributo scope=indica celdas afectadas-->
+                    <td>Imagen</td>
+                    <td>Nombre receta</td> 
+                    <td>Categoría</td>
+                    <td>Tiempo prep</td>
+                    <td>Tiempo cocción</td>
+                    <td>Tiempo total</td>
+                    <td>Porciones</td>
+                    <td>Complejidad</td>
+                    <td>Ocasión</td>
+                    <td>Descripción</td>
+                    <td>Likes</td>
+                    <td>Opciones</td>
+                </tr>
+                <!--</thead>-->
+
+                <?php
+
+                    $len = count($data);
+                    
+                    for($i=0; $i<$len; $i++){
+                            echo "<tr>";
+                            echo "<td><img src='./imgs/".$data[$i]["recipe_image"]."'class='thumb img-25'></td>";
+                            echo "<td>".$data[$i]["recipe_name"]."</td>";
+                            echo "<td>".$data[$i]["recipe_category"]."</td>";
+                            echo "<td>".$data[$i]["recipe_prep_time"]."</td>";
+                            echo "<td>".$data[$i]["recipe_cook_time"]."</td>";
+                            echo "<td>".$data[$i]["recipe_total_time"]."</td>";
+                            echo "<td>".$data[$i]["recipe_portions"]."</td>";
+                            echo "<td>".$data[$i]["is_featured"]."</td>";
+                            echo "<td>".$data[$i]["recipe_complex"]."</td>";
+                            echo "<td>".$data[$i]["recipe_occasion"]."</td>";
+                            echo "<td>".$data[$i]["recipe_description"]."</td>";
+                            echo "<td>".$data[$i]["recipe_ingredients"]."</td>";
+                            echo "<td>".$data[$i]["recipe_steps"]."</td>";
+                            echo "<td>".$data[$i]["recipe_likes"]."</td>";
+                            echo "<td><a href='edit.php?id=".$data[$i]["id_recipe"]."'>Edit</a>
+                            <a href='delete.php?id=".$data[$i]["id_recipe"]."'>Delete</a> <a href='likes.php?id=".$data[$i]["id_recipe"]."'>Likes</a></td>";
+                            echo "</tr>";
+                            
+                        }
+
+                ?>
+                
+            </table>
+
+  </div>
 
 </section>
   
