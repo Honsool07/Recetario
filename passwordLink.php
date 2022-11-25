@@ -28,13 +28,13 @@
 <div class="container" id="container">
 
 <div class="form-container sign-in-container">
-  <form action="#">
+  <form action="admin.php">
     <h1 class="text-cr mt-3">El link ha sido enviado</h1>
     <h4>Por favor, revise su bandeja de entrada para un enlace de restablecimiento de contraseña.</h2>
     
     
     
-      <a href="login.html" class="btnLog">Iniciar Sesión</a>
+      <a href="login.php" class="btnLog">Iniciar Sesión</a>
   </form>
 </div>
 <div class="overlay-container">

@@ -35,13 +35,13 @@
     </form>
   </div>
   <div class="form-container sign-in-container">
-    <form action="#">
+    <form action="admin.php">
       <h1 class="text-cr" style="font-size: 35;">Iniciar Sesión</h1>
       
       
       <input type="email" placeholder="Email" />
       <input type="password" placeholder="Password" />
-      <a href="forgotPassword.html">Olvidaste tu contrasena?</a>
+      <a href="forgotPassword.php">Olvidaste tu contrasena?</a>
       <button class="btnLog">Iniciar Sesión</button>
     </form>
   </div>
