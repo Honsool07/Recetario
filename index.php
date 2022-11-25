@@ -1,29 +1,3 @@
-<?php
-    require 'db.php';
-
-    $complex = $database->select("tb_recipe_complex","*");
-    $categories = $database->select("tb_recipe_category","*");
-    $ocassions = $database->select("tb_recipe_ocassions","*");
-
-    //featured recipes
-    $featured_recipes = $database->select("tb_recipes","*",[
-        "is_featured" => 1
-    ]);
-
-    //all recipes
-    $recipes = $database->select("tb_recipes","*");
-
-    //var_dump($ocassions);
-    
-    //top 10
-    $popular_recipes = $database->select("tb_recipes","*",[
-        "ORDER" => [
-            "recipe_likes" => "DESC"
-        ],
-        'LIMIT' => 10
-    ]);
-   
-?>
 
 
 
