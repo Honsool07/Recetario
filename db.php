@@ -16,7 +16,7 @@ if(!isset($database)){
 }
 
 
-   /* namespace Medoo;
+   /*  database laragon namespace Medoo;
     require 'Medoo.php';
 
     if(!isset($database)){
