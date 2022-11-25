@@ -53,7 +53,7 @@
               Categorías
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="allRecipes.html">Todas</a></li>
+              <li><a class="dropdown-item" href="allRecipes.php">Todas</a></li>
               <li><a class="dropdown-item" href="#">Desayuno</a></li>
               <li><a class="dropdown-item" href="#">Bebidas</a></li>
               <li><a class="dropdown-item" href="#">Entradas</a></li>
@@ -69,7 +69,7 @@
               Ocasiones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="allRecipes.html">Todas</a></li>
+              <li><a class="dropdown-item" href="allRecipes.php">Todas</a></li>
               <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
               <li><a class="dropdown-item" href="#">Día del padre</a></li>
               <li><a class="dropdown-item" href="#">Día de la madre</a></li>
@@ -86,7 +86,7 @@
               Dificultades
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="allRecipes.html">Todas</a></li>
+              <li><a class="dropdown-item" href="allRecipes.php">Todas</a></li>
               <li><a class="dropdown-item" href="#">Fácil</a></li>
               <li><a class="dropdown-item" href="#">Intermedio</a></li>
               <li><a class="dropdown-item" href="#">Difícil</a></li>
@@ -105,8 +105,8 @@
          </ul>
      
          <form class="me-2" >
-          <a href="login.html" class="btn btn-outline-success me-2">Iniciar Sesión</a>
-          <a href="login.html" class="btn btn-sm btn-outline-secondary">Registrarse</a>
+          <a href="login.php" class="btn btn-outline-success me-2">Iniciar Sesión</a>
+          <a href="login.php" class="btn btn-sm btn-outline-secondary">Registrarse</a>
              
          </form>
         <ul>
@@ -152,8 +152,8 @@
 <div class="container">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-      <li class="breadcrumb-item"><a href="allRecipes.html">Postres</a></li>
+      <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="allRecipes.php">Postres</a></li>
       <li class="breadcrumb-item active" aria-current="page">Yogurt Bowl</li>
     </ol>
   </nav>
@@ -256,7 +256,7 @@
                       
                   
                       <h2 >    
-                          <a class=" h2-title text-white"  href="recipeDetails.html">Recetas Recomendadas</a>
+                          <a class=" h2-title text-white"  href="recipeDetails.php">Recetas Recomendadas</a>
                       </h2>
                      
                   </div>
@@ -314,7 +314,7 @@
                            <img src="./imgs/menu-4.jpg" class="rounded float-start  card-img-top" alt="food"> 
                             <div class="card-body">
                               <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Hopes Croffle</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Hopes Croffle</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                            
                            

@@ -60,7 +60,7 @@ https://flickity.metafizzy.co/
               Categorías
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="todasRecetas.html">Todas</a></li>
+              <li><a class="dropdown-item" href="todasRecetas.php">Todas</a></li>
               <li><a class="dropdown-item" href="#">Desayuno</a></li>
               <li><a class="dropdown-item" href="#">Bebidas</a></li>
               <li><a class="dropdown-item" href="#">Entradas</a></li>
@@ -76,7 +76,7 @@ https://flickity.metafizzy.co/
               Ocasiones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="todasRecetas.html">Todas</a></li>
+              <li><a class="dropdown-item" href="todasRecetas.php">Todas</a></li>
               <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
               <li><a class="dropdown-item" href="#">Día del padre</a></li>
               <li><a class="dropdown-item" href="#">Día de la madre</a></li>
@@ -93,7 +93,7 @@ https://flickity.metafizzy.co/
               Dificultades
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="todasRecetas.html">Todas</a></li>
+              <li><a class="dropdown-item" href="todasRecetas.php">Todas</a></li>
               <li><a class="dropdown-item" href="#">Fácil</a></li>
               <li><a class="dropdown-item" href="#">Intermedio</a></li>
               <li><a class="dropdown-item" href="#">Difícil</a></li>
@@ -112,8 +112,8 @@ https://flickity.metafizzy.co/
         </ul>
      
          <form class="me-2" >
-          <a href="login.html" class="btn btn-outline-success me-2">Iniciar Sesión</a>
-          <a href="login.html" class="btn btn-sm btn-outline-secondary">Registrarse</a>
+          <a href="login.php" class="btn btn-outline-success me-2">Iniciar Sesión</a>
+          <a href="login.php" class="btn btn-sm btn-outline-secondary">Registrarse</a>
              
          </form>
           <ul>
@@ -153,7 +153,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Hobi Cookies</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Hobi Cookies</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -169,7 +169,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html"> Seven Drinks</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php"> Seven Drinks</a></h6>
                                 <a href="likes.php?id_recipe=1" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -185,7 +185,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Corn Ice Cream</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Corn Ice Cream</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -201,7 +201,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Mini chocolates</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Mini chocolates</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -218,7 +218,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Hopes Croffle</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Hopes Croffle</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -236,7 +236,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Hopes Croffle</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Hopes Croffle</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -252,7 +252,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Bora Cake</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Bora Cake</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -268,7 +268,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Star Candy</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Star Candy</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -284,7 +284,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Jin Ramen</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Jin Ramen</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -301,7 +301,7 @@ https://flickity.metafizzy.co/
                           <div class="card-body">
                     
                             <span class="badge rounded-pill text-bg-info mb-2">Postre</span>
-                              <h6><a class="card-title" href="recipeDetails.html">Cheese Cake</a></h6>
+                              <h6><a class="card-title" href="recipeDetails.php">Cheese Cake</a></h6>
                                 <a href="#" class="btn btn-card">Votar</a>
                             <small class="text-muted">Votos: 613</small>
                           </div>
@@ -334,7 +334,7 @@ https://flickity.metafizzy.co/
                       
                       
                       <h2 >    
-                          <a class="h2-title mt-3" href="recipeDetails.html">Por Categorías</a>
+                          <a class="h2-title mt-3" href="recipeDetails.php">Por Categorías</a>
                       </h2>
                      
                   </div>
@@ -451,7 +451,7 @@ https://flickity.metafizzy.co/
                         
                         
                         <h2 >    
-                            <a class="h2-title font-color" href="recipes.html">Por Ocasiones</a>
+                            <a class="h2-title font-color" href="recipes.php">Por Ocasiones</a>
                         </h2>
                        
                     </div>
@@ -464,7 +464,7 @@ https://flickity.metafizzy.co/
                           <div class="card shadow p-0.5 mb-5 bg-body rounded" >
                               <img src="./imgs/menu-1.jpg" class="rounded float-start" alt="menu"> 
                                <div class="card-body">
-                                <h6><a class="card-title" href="recipes.html">Todas</a></h6>
+                                <h6><a class="card-title" href="recipes.php">Todas</a></h6>
                                 
                               
                               
@@ -590,7 +590,7 @@ https://flickity.metafizzy.co/
               <div class="col-lg-12">
                   <div class="sec-title text-left mb-20 ">¿
                       <h2 >    
-                          <a class="h2-title"  href="registeredRecipes.html">Por Dificultad</a>
+                          <a class="h2-title"  href="registeredRecipes.php">Por Dificultad</a>
                       </h2>
                      
                   </div>
@@ -603,7 +603,7 @@ https://flickity.metafizzy.co/
                         <div class="card shadow p-0.5 mb-5 bg-body rounded" >
                             <img src="./imgs/menu-1.jpg" class="rounded float-start" alt="menu"> 
                              <div class="card-body">
-                                 <a href="registeredRecipes.html"><h6 class="card-title">Fácil</h6></a>
+                                 <a href="registeredRecipes.php"><h6 class="card-title">Fácil</h6></a>
                             
                             
                               </div>

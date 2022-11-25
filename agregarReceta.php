@@ -51,8 +51,8 @@ $occasions = $database->select ("tb_recipe_occasions","*");
          
      
          <form class="me-2" >
-          <a href="login.html" class="btn btn-outline-success me-2">Iniciar Sesión</a>
-          <a href="login.html" class="btn btn-sm btn-outline-secondary">Registrarse</a>
+          <a href="login.php" class="btn btn-outline-success me-2">Iniciar Sesión</a>
+          <a href="login.php" class="btn btn-sm btn-outline-secondary">Registrarse</a>
              
          </form>
          
@@ -72,8 +72,8 @@ $occasions = $database->select ("tb_recipe_occasions","*");
 
 <section class="container mt-5">
   <nav class="nav nav-pills nav-justified">
-    <a class="nav-link"  href="admin.html">Recetas Registradas</a>
-    <a class="nav-link active" aria-current="page" href="agregarReceta.html">Agregar Receta</a>
+    <a class="nav-link"  href="admin.php">Recetas Registradas</a>
+    <a class="nav-link active" aria-current="page" href="agregarReceta.php">Agregar Receta</a>
     
   </nav>
 </section>

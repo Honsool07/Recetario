@@ -56,7 +56,7 @@
             Categorías
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="allRecipes.html">Todas</a></li>
+            <li><a class="dropdown-item" href="allRecipes.php">Todas</a></li>
             <li><a class="dropdown-item" href="#">Desayuno</a></li>
             <li><a class="dropdown-item" href="#">Bebidas</a></li>
             <li><a class="dropdown-item" href="#">Entradas</a></li>
@@ -72,7 +72,7 @@
             Ocasiones
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="allRecipes.html">Todas</a></li>
+            <li><a class="dropdown-item" href="allRecipes.php">Todas</a></li>
             <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
             <li><a class="dropdown-item" href="#">Día del padre</a></li>
             <li><a class="dropdown-item" href="#">Día de la madre</a></li>
@@ -89,7 +89,7 @@
             Dificultades
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="allRecipes.html">Todas</a></li>
+            <li><a class="dropdown-item" href="allRecipes.php">Todas</a></li>
             <li><a class="dropdown-item" href="#">Fácil</a></li>
             <li><a class="dropdown-item" href="#">Intermedio</a></li>
             <li><a class="dropdown-item" href="#">Difícil</a></li>
@@ -108,8 +108,8 @@
       </ul>
    
        <form class="me-2" >
-        <a href="login.html" class="btn btn-outline-success me-2">Iniciar Sesión</a>
-        <a href="login.html" class="btn btn-sm btn-outline-secondary">Registrarse</a>
+        <a href="login.php" class="btn btn-outline-success me-2">Iniciar Sesión</a>
+        <a href="login.php" class="btn btn-sm btn-outline-secondary">Registrarse</a>
            
        </form>
        <ul>
