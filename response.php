@@ -70,6 +70,7 @@
                     "id_recipe_occasions" => $_POST["ocasiones"],
                     "recipe_description" => $_POST["descripcion"],
                     "is_featured" =>  $_POST["is_featured"],
+                    "recipe_likes" => $_POST["likes"],
                     "recipe_image" => $img,
                     "recipe_ingredients" => $_POST["ingredientes"],
                     "recipe_steps" => $_POST["pasos"],

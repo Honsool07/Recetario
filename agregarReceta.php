@@ -183,10 +183,10 @@ $occasions = $database->select ("tb_recipe_occasions","*");
        </select>
       </div>
 
-      <!--<div class="col">
+      <div class="col">
         <label for="likes" class="form-label imp-recipe" >Cantidad de Votos</label>
         <input type="number" class="form-control" id="likes" required>
-      </div>-->
+      </div>
 
     </div>
 

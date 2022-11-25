@@ -19,7 +19,7 @@
         "tb_recipes.recipe_description",
         "tb_recipes.recipe_ingredients",
         "tb_recipes.recipe_steps",
-
+        "tb_recipes.is_featured",
         "tb_recipes.recipe_image",
         "tb_recipes.recipe_likes",
         "tb_recipe_category.recipe_category",
@@ -112,7 +112,7 @@
   <div>
   <table class="table table-bordered border-pink table-hover title-regular text-center">
                 <!--<thead class="title-regular text-white text-center">-->
-               <tr class="badge-pink"> <!-- tr=fila th=cabecera th=atributo scope=indica celdas afectadas-->
+               <tr> <!-- tr=fila th=cabecera th=atributo scope=indica celdas afectadas-->
                     <td>Imagen</td>
                     <td>Nombre receta</td> 
                     <td>Categoría</td>
@@ -134,7 +134,7 @@
                     
                     for($i=0; $i<$len; $i++){
                             echo "<tr>";
-                            echo "<td><img src='./imgs/".$data[$i]["recipe_image"]."'class='thumb img-25'></td>";
+                            echo "<td><img src='./imgs".$data[$i]["recipe_image"]."'class='thumb img-25'></td>";
                             echo "<td>".$data[$i]["recipe_name"]."</td>";
                             echo "<td>".$data[$i]["recipe_category"]."</td>";
                             echo "<td>".$data[$i]["recipe_prep_time"]."</td>";

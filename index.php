@@ -1,3 +1,32 @@
+<?php
+    require 'db.php';
+
+    $complex = $database->select("tb_recipe_complex","*");
+    $categories = $database->select("tb_recipe_category","*");
+    $ocassions = $database->select("tb_recipe_ocassions","*");
+
+    //featured recipes
+    $featured_recipes = $database->select("tb_recipes","*",[
+        "is_featured" => 1
+    ]);
+
+    //all recipes
+    $recipes = $database->select("tb_recipes","*");
+
+    //var_dump($ocassions);
+    
+    //top 10
+    $popular_recipes = $database->select("tb_recipes","*",[
+        "ORDER" => [
+            "recipe_likes" => "DESC"
+        ],
+        'LIMIT' => 10
+    ]);
+   
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -196,6 +225,17 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row g-0 mt-3">
+                <h3>All our recipes</h3>
+                <?php 
+                    foreach ($recipes as $recipe){
+                        echo "<div class='col-3 card'><img src='./imgs/".$recipe["recipe_image"]."' class='card-img-top' alt='".$recipe["recipe_name"]."'><div class='card-body'><h5 class='card-title'>".$recipe["recipe_name"]."</h5><p class='card-text'>".substr($recipe["recipe_description"], 0, 100)."</p><a href='recipe.php?id_recipe=".$recipe["id_recipe"]."' class='btn btn-primary'>VIEW RECIPE</a>
+                      </div></div>";
+                    }
+                ?>
+            </div>
+
             <div class="container text-center">
                 <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
                   <div class="col-md">
