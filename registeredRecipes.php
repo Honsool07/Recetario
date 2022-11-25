@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registeredRecipes</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
-
       
-
     
       <!--Bootstrap-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,21 +20,16 @@
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
       <!--Icon Line-->
       <script src="https://kit.fontawesome.com/f664eca71c.js" crossorigin="anonymous"></script>
-
       
 <!-- Librerias de Sliders
   Carousel https://splidejs.com/guides/getting-started/
 https://swiperjs.com/get-started
 https://flickity.metafizzy.co/
 -->
-
 </head>
-
-
 <body>
    <!--Navbar Starts-->    
    <section class="container">
-
     <nav class="navbar navbar-expand-lg navbar-white bg-white" >
       
         
@@ -124,16 +117,9 @@ https://flickity.metafizzy.co/
       </div>
     </nav>
    </section>
-
 <!--Navbar ends-->
-
-
 <!--Recipes starts-->
-
-
-
 <section  class="mt-3" >
-
   <div style="background-color: #f8be53;">
     <figure class="text-center ">
       <blockquote class="blockquote">
@@ -151,7 +137,6 @@ https://flickity.metafizzy.co/
     </ol>
   </nav>
 </div>
-
   <div class="sec-wp container-fluid  ">
       <div class="container-sm mb-2 ">
           <div class="row">
@@ -226,7 +211,6 @@ https://flickity.metafizzy.co/
                        </div>
                   </div>
                </div>
-
                
               </div>
           </div>  
@@ -238,12 +222,7 @@ https://flickity.metafizzy.co/
   </div>
 </section>
 <!---recomended ends-->
-
-
-
-
 <!--Footer starts-->
-
 <footer class="bg-dark text-white pt-5 pb-4">
  
   <div class="container text-left text-md-left">
@@ -251,25 +230,21 @@ https://flickity.metafizzy.co/
        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class=" mb-4 font weight-bold text-warning main-title" >Gustus</h5>
             <p class="md-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi maxime ullam perferendis! Quidem deserunt eaque, vero eligendi </p>
-
        </div>
        <div class="col-mmd-2 col-lg-2 col-xl-2 mx-auto mt-3" >
                <h5 class=" txt-footer text-uppercase mb-4 font-weight-bold text-warning">Categorias</h5>
                <p>
                 <a href="#" class="text-white" style="text-decoration:none  ;"> Almuerzo</a>
                </p>
-
                <p>
                 <a href="#" class="text-white" style="text-decoration:none ;"> Desayuno</a>
                </p>
                <p>
                 <a href="#" class="text-white" style="text-decoration:none ;"> Postres</a>
                </p>
-
                <p>
                 <a href="#" class="text-white" style="text-decoration:none ;"> BTS</a>
                </p>
-
        </div>
            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">  
              <h5 class=" txt-footer text-uppercase mb-4 font-weight-bold text-warning"> Links</h5>
@@ -277,48 +252,39 @@ https://flickity.metafizzy.co/
              <p>
               <a href="#" class="text-white" style="text-decoration:none ;"> Tu Cuenta</a>
              </p>
-
              <p>
               <a href="#" class="text-white" style="text-decoration:none ;"> Registrarse</a>
              </p>
              <p>
               <a href="#" class="text-white" style="text-decoration:none ;"> Todas las Recetas</a>
              </p>
-
              <p>
               <a href="#" class="text-white" style="text-decoration:none ;"> BTS</a>
              </p>
-
            </div >    
            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                  
             <h5 class=" txt-footer text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
             <p>
               <i class="fas fa-home mr-3"></i> Esparza, EP 0613, CR
-
             </p>
-
             <p>
               <i class="fas fa-envelope mr-3"></i> gustus@gmail.com
             </p>
             <p>
               <i class="fas fa-phone mr-3"></i> +07 144340
             </p>
-
             <p>
               <i class="fas fa-print mr-3"></i> +13 06132013
             </p>
            </div>      
-
          </div>
-
            <hr class="mb-4">
            <div class="row align-items-center">
              <div class="col-md-7 col-lg-8">
                 <p>Copyright ©2022 All rights reserved by:
                    <a href="#" style="text-decoration:none">
                       <strong class="text-warning">Gustus</strong>
-
                   </a></p>
              </div>
              <div class="col-md-5 col-lg-4">
@@ -331,33 +297,22 @@ https://flickity.metafizzy.co/
                             <li class="list-inline-item">
                               <a href="#" class=" txt-footer2 btn-floating btn-sm text-white" ><i class="fab fa-twitter fa-sm" ></i></a>
                             </li>
-
                             <li class="list-inline-item">
                               <a href="#" class=" txt-footer2 btn-floating btn-sm text-white"><i class="fab fa-google-plus fa-sm" ></i></a>
                             </li>
-
                             <li class="list-inline-item">
                               <a href="#" class="txt-footer2 btn-floating btn-sm text-white" ><i class="fab fa-linkedin fa-sm" ></i></a>
                             </li>
-
                             <li class="list-inline-item">
                               <a href="#" class="txt-footer2 btn-floating btn-sm text-white" ><i class="fab fa-youtube fa-sm" ></i></a>
                             </li>
-
-
-
-
                           </ul>
                          
                       </div>
              </div>
           </div>
-
   </div>
-
-
 </footer>
-
 <!--Footer ends-->
   
   
@@ -367,3 +322,17 @@ https://flickity.metafizzy.co/
   
 </body>
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

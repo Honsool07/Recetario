@@ -1,3 +1,21 @@
+<?php
+    require 'db.php';
+
+    
+
+    //all recipes
+    $recipes = $database->select("tb_recipes","*");
+
+    //top 10
+    $popular_recipes = $database->select("tb_recipes","*",[
+      "ORDER" => [
+          "recipe_likes" => "DESC"
+      ],
+      'LIMIT' => 10
+    
+    ]);
+   
+?>
 
 
 
@@ -194,22 +212,22 @@
                 <div class="col-lg-12">
                     <div class="sec-title text-left">
                         
-                        <h2 class="h2-title">Categorias Populares </h2>
+                        <h2 class="h2-title">Recetas Populares </h2>
                        
                     </div>
                 </div>
             </div>
 
-            <div class="row g-0 mt-3">
-                <h3>All our recipes</h3>
+            <div class="row g-0 mt-4">
+               
                 <?php 
                     foreach ($recipes as $recipe){
-                        echo "<div class='col-3 card'><img src='./imgs/".$recipe["recipe_image"]."' class='card-img-top' alt='".$recipe["recipe_name"]."'><div class='card-body'><h5 class='card-title'>".$recipe["recipe_name"]."</h5><p class='card-text'>".substr($recipe["recipe_description"], 0, 100)."</p><a href='recipe.php?id_recipe=".$recipe["id_recipe"]."' class='btn btn-primary'>VIEW RECIPE</a>
+                        echo "<div class='col-4 card'><img src='./imgs/".$recipe["recipe_image"]."' class='card-img-top' alt='".$recipe["recipe_name"]."'><div class='card shadow p-3 mb-5 bg-body rounded'><h5 class='card-title'>".$recipe["recipe_name"]."</h5><p class='card-text'>".substr($recipe["recipe_description"], 0, 100)."</p><a href='recipe.php?id_recipe=".$recipe["id_recipe"]."' class='btn btn-card'>Ver mas...</a>
                       </div></div>";
                     }
                 ?>
             </div>
-
+         <!--
             <div class="container text-center">
                 <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
                   <div class="col-md">
@@ -266,7 +284,7 @@
                 </div>
          
             </div>  
-        </div>      
+        </div>  -->    
     </div>
 </section>
 
@@ -283,6 +301,16 @@
                         <h2 class="h2-title">10 recetas mas votadas </h2> 
                        
                     </div>
+                    <div class="row g-0 mt-3">
+                
+                <?php 
+                    foreach ($popular_recipes as $recipe){
+                        echo "<div class='col-3 card'><img src='../images/".$recipe["recipe_image"]."' class='card-img-top' alt='".$recipe["recipe_name"]."'><div class='card-body'><h5 class='card-title'>".$recipe["recipe_name"]."</h5><p class='card-text'>".substr($recipe["recipe_description"], 0, 100)."</p><a href='recipe.php?id_recipe=".$recipe["id_recipe"]."' class='btn btn-card'>Ver mas...</a>
+                      </div></div>";
+                    }
+                ?>
+            </div>
+<!--
                 </div>
             </div>
             <div class="container-sm text-center ">
@@ -423,7 +451,7 @@
                
               
               
-          </div>  
+          </div> --> 
         </div>      
     
 </section>

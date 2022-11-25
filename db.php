@@ -1,7 +1,22 @@
- 
-
 <?php 
-namespace Medoo;
+
+
+    namespace Medoo;
+    require 'Medoo.php';
+
+    if(!isset($database)){
+        $database = new Medoo([
+            // [required]
+            'type' => 'mysql',
+            'host' => 'db4free.net:3306',
+            'database' => 'recetario',
+            'username' => 'camila2022',
+            'password' => 'rosado2022'
+        ]);
+    }
+
+/*
+namespace Medoo;  CAMILA NO DEJE NINGUN ESPACIO EN EL DOCUMENTO!!!!!! ARRIBA
 require 'Medoo.php';
 
 if(!isset($database)){
@@ -16,7 +31,7 @@ if(!isset($database)){
 }
 
 
-   /*  database laragon namespace Medoo;
+   database laragon namespace Medoo;
     require 'Medoo.php';
 
     if(!isset($database)){
