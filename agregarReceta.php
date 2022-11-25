@@ -89,18 +89,18 @@ $occasions = $database->select ("tb_recipe_occasions","*");
       </div>
       <div class="col">
         <label for="nombre-receta" class="form-label imp-recipe">Nombre de la Receta</label>
-        <input type="text" class="form-control" id="nombre-receta" required>
+        <input name="nombre-receta" type="text" class="form-control" id="nombre-receta" required>
       </div>
     </div>
     
     <div class="row">
       <div class="col">
         <label for="descripcion" class="form-label imp-recipe" >Descripcion</label>
-      <textarea class="form-control" id="descripcion"></textarea>
+      <textarea name="descripcion" class="form-control" id="descripcion"></textarea>
       </div>
       <div class="col">
-        <label for="validationTextarea02" class="form-label imp-recipe" >Ingredientes</label>
-      <textarea class="form-control" id="validationTextarea02" ></textarea>
+        <label for="ingredientes" class="form-label imp-recipe" >Ingredientes</label>
+      <textarea  name="ingredientes" class="form-control" id="ingredientes" ></textarea>
       </div>
     </div>
     
@@ -108,11 +108,11 @@ $occasions = $database->select ("tb_recipe_occasions","*");
     <div class="row">
       <div class="col">
         <label for="tiempo-preparacion" class="form-label imp-recipe" >Tiempo de preparacion</label>
-      <input type="text" class="form-control" id="tiempo-preparacion" required>
+      <input name="tiempo-preparacion" type="text" class="form-control" id="tiempo-preparacion" required>
       </div>
       <div class="col">
-        <label for="validationTextarea03" class="form-label imp-recipe">Instrucciones</label>
-        <textarea class="form-control" id="validationTextarea03"></textarea>
+        <label for="pasos" class="form-label imp-recipe">Pasos</label>
+        <textarea name="pasos" class="form-control" id="pasos"></textarea>
       </div>
     </div>
 
@@ -120,7 +120,7 @@ $occasions = $database->select ("tb_recipe_occasions","*");
     <div class="row">
       <div class="col">
         <label for="tiempo-coccion" class="form-label imp-recipe" >Tiempo de Cocción</label>
-      <input type="text" class="form-control" id="tiempo-coccion" required>
+      <input name="tiempo-coccion" type="text" class="form-control" id="tiempo-coccion" required>
       </div>
       <div class="col">
         <label for="categoria" class="form-label imp-recipe">Categorias</label>
@@ -142,7 +142,7 @@ $occasions = $database->select ("tb_recipe_occasions","*");
      
         <div class="col">
           <label for="porciones" class="form-label imp-recipe">Porciones</label>
-          <input type="text" class="form-control" id="porciones" required>
+          <input name="porciones" type="text" class="form-control" id="porciones" required>
         </div>
         
     </div>
@@ -183,10 +183,10 @@ $occasions = $database->select ("tb_recipe_occasions","*");
        </select>
       </div>
 
-      <div class="col">
-        <label for="validationCustom10" class="form-label imp-recipe" >Cantidad de Votos</label>
-        <input type="number" class="form-control" id="validationCustom10" required>
-      </div>
+      <!--<div class="col">
+        <label for="likes" class="form-label imp-recipe" >Cantidad de Votos</label>
+        <input type="number" class="form-control" id="likes" required>
+      </div>-->
 
     </div>
 

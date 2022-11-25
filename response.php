@@ -14,7 +14,7 @@
 
     require 'db.php';
 
-    function generateRandomString($length = 10) {
+    /*function generateRandomString($length = 10) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';
@@ -31,7 +31,7 @@
         /* foreach($_POST["ingredients"] as $ingredient){//$ingredient es cada ingrediente en el array
             $ingredients.= $ingredient." ";//despues del espacio se agrega el siguiente ingrediente
         } */
-        foreach($_POST["ingredients"] as $key => $ingredient){
+        /*foreach($_POST["ingredients"] as $key => $ingredient){
             if($key == array_key_last($_POST["ingredients"])){
                 $ingredients.= $ingredient;
             } else{
@@ -56,7 +56,7 @@
 
             if(empty($errors)){
                 $img = "recipe-upload-".generateRandomString().".".$file_ext;//genera el nombre
-                move_uploaded_file($file_tmp, "images/".$img);
+                move_uploaded_file($file_tmp, "images/".$img);*/
 
 
                 $database->insert("tb_recipes", [
@@ -64,25 +64,26 @@
                     "recipe_total_time" => $_POST["tiempo-total"],
                     "recipe_cook_time" => $_POST["tiempo-coccion"],
                     "recipe_prep_time" => $_POST["tiempo-preparacion"],
-                    "recipe__portions" => $_POST["porciones"],
+                    "recipe_portions" => $_POST["porciones"],
                     "id_recipe_category" => $_POST["categoria"],
                     "id_recipe_complex" => $_POST["dificultad"],
                     "id_recipe_occasions" => $_POST["ocasiones"],
                     "recipe_description" => $_POST["descripcion"],
                     "is_featured" =>  $_POST["is_featured"],
                     "recipe_image" => $img,
-                    "recipe_ingredients" => $ingredients
+                    "recipe_ingredients" => $_POST["ingredientes"],
+                    "recipe_steps" => $_POST["pasos"],
                 ]);
                 header("location: admin.php");
 
-            }
+           // }
 
 
-        }
+        //}
 
 
        
-    }
+    //}
 
    /*  if(isset($_POST)){
     $database->insert("tb_recipe_category", [
